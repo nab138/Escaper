@@ -1,0 +1,83 @@
+{
+    "floors": [
+        "Ship",
+        "Outside"
+    ],
+    "rooms": {
+        "Cockpit": {
+            "parent": 0,
+            "evidence": [
+                {
+                    "name": "Note from Houston",
+                    "content": "*Good luck, astronaut. We pray you don't need it.*"
+                },
+                {
+                    "name": "NES Controller",
+                    "content": "The designers of this rocket each put something on it that was important to them. This was a rule made by NASA to ensure that the designers wouldn't let it fail. There were pictures, wedding rings, etc, but this controller stood out."
+                }
+            ],
+            "puzzles": [
+                {
+                    "id": "thruster_engage",
+                    "name": "Thruster Engage Lever",
+                    "content": "Something is preventing the lever from moving all the way. When you look closer, a tab labeled *Remove in case of emergencies* is visible. The tab has a locking mechanism that can be unlocked with a 4 digit code.",
+                    "shortdesc": "The lever is getting stuck. Requires a 4 digit code.",
+                    "solution": "code.1234"
+                }
+            ]
+        },
+        "Analysis": {
+            "parent": 0,
+            "evidence": [
+                {
+                    "name": "Potted Plant",
+                    "content": "A potted plant with a flower in it. There's a note on the bottom that reads, *Water Twice a day*."
+                }
+                ],
+                "puzzles": [
+                    {
+                        "id": "broken_computer",
+                        "name": "Broken Computer",
+                        "content": "The power revealed a computer that when turned on, displayed *Hard Drive Error (Bad Sector - 24)*.",
+                        "shortdesc": "Broken computer with a corrupted hard drive",
+                        "solution": "",
+                        "requires": [
+                            "backup_gen"
+                        ]
+                    }
+                ]
+        },
+        "Generator Room": {
+            "parent": 0,
+            "evidence": [
+                {
+                    "name": "Damaged Fuel Cell",
+                    "content": "The fuel cell is bulging, and it's clear that whatever went wrong started with this."
+                }
+            ],
+                "puzzles": [
+                {
+                    "id": "backup_gen",
+                    "name": "Backup Generator",
+                    "content": "The analysis lab requires power. The generator needs to be jumpstarted by inputting a specific sequence of movements and button presses. 1 is up, 2 is down, 3 is left, 4 is right. There are two buttons: a and b.",
+                    "shortdesc": "Move it in a specific way to activate.",
+                    "solution": "string.11223344ba"
+                },
+                {
+                    "id": "console",
+                    "name": "Console",
+                    "content": "After turning on the power, a screen whirred to life. It displays: *NASA In-house monitor & log console v0.0.1 - Password required*",
+                    "shortdesc": "The console requires a password.",
+                    "solution": "string.test"
+                }
+            ]
+        },
+        "crater" : {
+            "parent": 1,
+            "displayName": "Crater"
+        }
+    }
+}
+
+
+

@@ -1,0 +1,14 @@
+{
+    "games": [
+        {
+            "name": "Escape from mars",
+            "channel_name": "control-panel",
+            "id": "mars",
+            "description": "You've been stranded on mars!",
+            "min": 1,
+            "max": 5,
+            "escapeMsg": "Finally, everything is ready for takeoff. After a long, treacherous flight home, you made it to Earth.",
+            "story": "You volunteered to participate in the new NASA mars initiative. After years of intense training, your day finally came. However, when you landed, the generator blew! Without power, the ship's autopilot won't work and you can't communicate with Houston. You must manually fly the ship home, but not before collecting research samples. Solve puzzles to collect samples and fly the ship to Earth. Good Luck."
+        }
+    ]
+}
